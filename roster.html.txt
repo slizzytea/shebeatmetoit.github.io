@@ -1,0 +1,66 @@
+<tbody style="color:#0A1A3A; font-weight:600;">
+
+  <tr>
+    <td>#5</td>
+    <td>Brody Butoroc</td>
+    <td>PG</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#18</td>
+    <td>William Lawrence</td>
+    <td>SG</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#1</td>
+    <td>Jack Giese</td>
+    <td>SF</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#9</td>
+    <td>Thomas Leeper</td>
+    <td>PF</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#0</td>
+    <td>Aiden Curtis</td>
+    <td>C</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>∞</td>
+    <td>Leighton Hines</td>
+    <td>SG</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#7</td>
+    <td>Ben Nolan</td>
+    <td>SF</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#207</td>
+    <td>Sankeerth Gottumukkala</td>
+    <td>SG</td>
+    <td>-</td>
+  </tr>
+
+  <tr>
+    <td>#55</td>
+    <td>Cooper</td>
+    <td>PF/C</td>
+    <td>-</td>
+  </tr>
+
+</tbody>
