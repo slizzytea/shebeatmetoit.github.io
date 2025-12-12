@@ -10,10 +10,8 @@
       background:#0f172a;
       margin:0;
       font-family: system-ui, sans-serif;
-      color:#0A1A3A;
     }
 
-    /* NAV */
     header {
       background:#0A1A3A;
       border-bottom:4px solid #C63232;
@@ -40,24 +38,17 @@
       font-weight:600;
     }
 
-    .nav a:hover {
-      background:white;
-      color:#0A1A3A;
-    }
-
-    /* LOGO */
-    .logo-wrapper {
+    .logo {
       text-align:center;
-      margin:30px 0 10px;
+      margin:25px 0;
     }
 
-    .logo-wrapper img {
+    .logo img {
       width:160px;
     }
 
     h1 {
       text-align:center;
-      margin-top:10px;
       font-size:2.2rem;
       font-weight:900;
       background:linear-gradient(to right,#C63232,#0A1A3A);
@@ -65,16 +56,14 @@
       color:transparent;
     }
 
-    /* TABLE */
     table {
       width:90%;
       max-width:1100px;
       margin:30px auto;
-      border-collapse:collapse;
       background:white;
+      border-collapse:collapse;
       border-radius:10px;
       overflow:hidden;
-      box-shadow:0 0 15px rgba(0,0,0,0.2);
     }
 
     thead {
@@ -83,15 +72,25 @@
     }
 
     th, td {
-      padding:14px 16px;
+      padding:14px;
       border-bottom:1px solid #e5e7eb;
       text-align:left;
       font-weight:600;
     }
 
-    tr.headline-row:hover {
+    tr:hover {
       background:#f4f6fa;
-      cursor:pointer;
+    }
+
+    a.headline {
+      color:#0A1A3A;
+      text-decoration:none;
+      font-weight:800;
+    }
+
+    a.headline:hover {
+      color:#C63232;
+      text-decoration:underline;
     }
 
     .date {
@@ -99,58 +98,24 @@
       color:#475569;
       font-size:0.9rem;
     }
-
-    .headline {
-      font-weight:800;
-      color:#0A1A3A;
-    }
-
-    /* ARTICLE */
-    .article-row {
-      display:none;
-      background:#1e293b;
-      color:white;
-    }
-
-    .article-content {
-      padding:20px;
-      line-height:1.6;
-    }
-
-    .article-content h3 {
-      margin-top:0;
-      color:#f8fafc;
-    }
-
-    .article-content p {
-      color:#e5e7eb;
-      margin-bottom:10px;
-    }
   </style>
-
-  <script>
-    function toggleArticle(id) {
-      const row = document.getElementById(id);
-      row.style.display = row.style.display === "table-row" ? "none" : "table-row";
-    }
-  </script>
 </head>
 
 <body>
 
 <header>
   <div class="nav">
-    <div style="font-weight:900;font-size:1.2rem;">SBMTI Ballers</div>
+    <div style="font-weight:900;">SBMTI Ballers</div>
     <div>
       <a href="index.html">Home</a>
-      <a href="roster.html">Roster</a>
       <a href="schedule.html">Schedule</a>
+      <a href="roster.html">Roster</a>
       <a href="news.html">News</a>
     </div>
   </div>
 </header>
 
-<div class="logo-wrapper">
+<div class="logo">
   <img src="https://raw.githubusercontent.com/slizzytea/shebeatmetoit.github.io/main/logo.png">
 </div>
 
@@ -163,69 +128,23 @@
       <th>HEADLINE</th>
     </tr>
   </thead>
-
   <tbody>
-
-    <!-- ARTICLE 1 -->
-    <tr class="headline-row" onclick="toggleArticle('a1')">
+    <tr>
       <td class="date">December 8, 2025</td>
-      <td class="headline">Ballers Dominate Benchwarmers Elite in Season Opener</td>
+      <td><a class="headline" href="article-opener.html">
+        Ballers Open Season With Dominant Win Over Benchwarmers Elite
+      </a></td>
     </tr>
 
-    <tr id="a1" class="article-row">
-      <td colspan="2">
-        <div class="article-content">
-          <h3>Ballers Dominate Benchwarmers Elite in Season Opener</h3>
-          <p>
-            The She Beat Me To It Ballers opened their season with a statement win,
-            defeating Benchwarmers Elite 58–15 at home. From the opening tip,
-            the Ballers set the tone with strong defense and fast-paced offense.
-          </p>
-          <p>
-            Aiden and Jack led the way early, pushing the tempo and scoring in
-            transition. Tom had a big night, finishing with 12 points and earning
-            Player of the Game honors for his effort on both ends of the floor.
-          </p>
-          <p>
-            The Ballers never let up, sharing the ball and getting contributions
-            from the entire roster. The dominant win gave the team confidence as
-            they moved into their second game of the night.
-          </p>
-        </div>
-      </td>
-    </tr>
-
-    <!-- ARTICLE 2 -->
-    <tr class="headline-row" onclick="toggleArticle('a2')">
+    <tr>
       <td class="date">December 8, 2025</td>
-      <td class="headline">Mystic Lakers Edge Ballers in Double Overtime Thriller</td>
+      <td><a class="headline" href="article-2ot.html">
+        Mystic Lakers Escape With Double-Overtime Win Over Ballers
+      </a></td>
     </tr>
-
-    <tr id="a2" class="article-row">
-      <td colspan="2">
-        <div class="article-content">
-          <h3>Mystic Lakers Edge Ballers in Double Overtime Thriller</h3>
-          <p>
-            The second game of the night turned into an instant classic as the
-            She Beat Me To It Ballers battled the Mystic Lakers through regulation
-            and two overtime periods.
-          </p>
-          <p>
-            Aiden and Jack once again paced the offense, while Tom and William
-            provided key scoring during clutch moments. The game remained tight
-            until the final seconds of double overtime.
-          </p>
-          <p>
-            Mystic Lakers guard Jacob finished with 16 points and sealed the game
-            by knocking down the game-winning free throw. The Lakers escaped with
-            a 31–30 victory, handing the Ballers a tough but hard-fought loss.
-          </p>
-        </div>
-      </td>
-    </tr>
-
   </tbody>
 </table>
 
 </body>
 </html>
+
