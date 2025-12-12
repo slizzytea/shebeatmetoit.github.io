@@ -1,66 +1,228 @@
-<tbody style="color:#0A1A3A; font-weight:600;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Roster – She Beat Me To It</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <tr>
-    <td>#5</td>
-    <td>Brody Butoroc</td>
-    <td>PG</td>
-    <td>-</td>
-  </tr>
+  <style>
+    body {
+      background: #0f172a;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: white;
+    }
 
-  <tr>
-    <td>#18</td>
-    <td>William Lawrence</td>
-    <td>SG</td>
-    <td>-</td>
-  </tr>
+    /* NAVIGATION BAR */
+    header {
+      background: #0A1A3A;
+      padding: 15px 0;
+      border-bottom: 3px solid #C63232;
+    }
 
-  <tr>
-    <td>#1</td>
-    <td>Jack Giese</td>
-    <td>SF</td>
-    <td>-</td>
-  </tr>
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  <tr>
-    <td>#9</td>
-    <td>Thomas Leeper</td>
-    <td>PF</td>
-    <td>-</td>
-  </tr>
+    .nav a {
+      color: white;
+      margin-left: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: #C63232;
+    }
 
-  <tr>
-    <td>#0</td>
-    <td>Aiden Curtis</td>
-    <td>C</td>
-    <td>-</td>
-  </tr>
+    .nav a:hover {
+      background: #ffffff;
+      color: #0A1A3A;
+    }
 
-  <tr>
-    <td>∞</td>
-    <td>Leighton Hines</td>
-    <td>SG</td>
-    <td>-</td>
-  </tr>
+    /* LOGO */
+    .logo-wrapper {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-  <tr>
-    <td>#7</td>
-    <td>Ben Nolan</td>
-    <td>SF</td>
-    <td>-</td>
-  </tr>
+    .logo-wrapper img {
+      width: 200px;
+      height: auto;
+      filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.5));
+    }
 
-  <tr>
-    <td>#207</td>
-    <td>Sankeerth Gottumukkala</td>
-    <td>SG</td>
-    <td>-</td>
-  </tr>
+    /* TITLE */
+    h1 {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 2.3rem;
+      font-weight: 900;
+      background: linear-gradient(to right, #C63232, #0A1A3A);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 2px;
+    }
 
-  <tr>
-    <td>#55</td>
-    <td>Cooper</td>
-    <td>PF/C</td>
-    <td>-</td>
-  </tr>
+    /* TABLE */
+    table {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      color: #0A1A3A;
+      font-weight: 600;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    }
 
-</tbody>
+    thead {
+      background: linear-gradient(to right, #0A1A3A, #C63232);
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    th, td {
+      padding: 14px 12px;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f4f6fa;
+    }
+
+    /* HOVER EFFECT */
+    tbody tr:hover {
+      background: #C63232;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    /* MOBILE */
+    @media(max-width: 600px) {
+      table {
+        font-size: 0.8rem;
+      }
+
+      th, td {
+        padding: 10px 8px;
+      }
+
+      .logo-wrapper img {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <div style="font-weight:900; font-size:1.2rem;">SBMTI Ballers</div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="roster.html">Roster</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LOGO -->
+  <div class="logo-wrapper">
+    <img src="https://raw.githubusercontent.com/slizzytea/shebeatmetoit.github.io/main/logo.png" alt="Team Logo">
+  </div>
+
+  <!-- TITLE -->
+  <h1>2025 – 2026 Roster</h1>
+
+  <!-- ROSTER TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Player Name</th>
+        <th>Position</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>#5</td>
+        <td>Brody Butoroc</td>
+        <td>PG</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#18</td>
+        <td>William Lawrence</td>
+        <td>SG</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#1</td>
+        <td>Jack Giese</td>
+        <td>SF</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#9</td>
+        <td>Thomas Leeper</td>
+        <td>PF</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#0</td>
+        <td>Aiden Curtis</td>
+        <td>C</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>∞</td>
+        <td>Leighton Hines</td>
+        <td>SG</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#7</td>
+        <td>Ben Nolan</td>
+        <td>SF</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#207</td>
+        <td>Sankeerth Gottumukkala</td>
+        <td>SG</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>#55</td>
+        <td>Cooper</td>
+        <td>PF/C</td>
+        <td>-</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+</html>
